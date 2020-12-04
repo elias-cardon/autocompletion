@@ -14,10 +14,10 @@
   }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Details</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
@@ -46,7 +46,7 @@
           </div>
           <div class="card-body">
             <!-- <h4><b>Code :</b> <?= $row['country_code'] ?></h4> -->
-            <h4><b>Capitale :</b> <?= $row['city'] ?></h4>
+            <h4><b>Statut :</b> <?= $row['city'] ?></h4>
             <h4><b>Description :</b> <?= $row['description'] ?></h4>
           </div>
         </div>

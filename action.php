@@ -13,7 +13,7 @@
         echo '<a href="#" class="list-group-item list-group-item-action border-1">' . $row['country_name'] . '</a>';
       }
     } else {
-      echo '<p class="list-group-item border-1">Pas de pays</p>';
+      echo '<p class="list-group-item border-1">Pas de personnage correspondant</p>';
     }
   }
 ?>
