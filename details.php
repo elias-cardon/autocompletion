@@ -45,7 +45,7 @@
             <h1><?= $row['country_name'] ?></h1>
           </div>
           <div class="card-body">
-            <h4><b>Code :</b> <?= $row['country_code'] ?></h4>
+            <!-- <h4><b>Code :</b> <?= $row['country_code'] ?></h4> -->
             <h4><b>Capitale :</b> <?= $row['city'] ?></h4>
             <h4><b>Description :</b> <?= $row['description'] ?></h4>
           </div>
