@@ -3,7 +3,7 @@
 
   if (isset($_POST['query'])) {
     $inpText = $_POST['query'];
-    $sql = 'SELECT name FROM SW WHERE name LIKE :name';
+    $sql = 'SELECT name FROM SW WHERE name LIKE :name LIMIT 15';
     $stmt = $conn->prepare($sql);
     $stmt->execute(['name' => '%' . $inpText . '%']);
     $result = $stmt->fetchAll();
