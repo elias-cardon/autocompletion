@@ -28,7 +28,7 @@
 
   <div class="header-limiter">
 
-    <h1><a href="#">Autocompletion</a></h1>
+    <h1><a href="#">Autocomplétion</a></h1>
 
     <nav>
       <a href="index.php">Accueil</a>
@@ -39,14 +39,14 @@
 </header>
   <div class="container-fluid">
     <div class="row mt-5">
-      <div class="col-5 mx-auto">
+      <div class="col-9 mx-auto">
         <div class="card shadow text-center">
           <div class="card-header">
             <h1><?= $row['name'] ?></h1>
           </div>
           <div class="card-body">
             <h4><b>Statut :</b> <?= $row['state'] ?></h4>
-            <h4><b>Description :</b><br/> <?= $row['description'] ?></h4>
+            <h4><b>Description :</b><br/><br/> <?= $row['description'] ?></h4>
           </div>
         </div>
       </div>
