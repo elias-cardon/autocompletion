@@ -5,7 +5,7 @@
   const DBNAME = 'autocompletion';  // MySQL Database name
 
   // Data Source Network
-  $dsn = 'mysql:host=' . DBHOST . ';dbname=' . DBNAME . '';
+  $dsn = 'mysql:host=' . DBHOST . ';dbname=' . DBNAME . '; dbuser='. DBUSER .';charset=UTF8';
 
   // Connection Variable
   $conn = null;
@@ -17,4 +17,5 @@
   } catch (PDOException $e) {
     die('Error : ' . $e->getMessage());
   }
+
 ?>

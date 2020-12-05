@@ -4,9 +4,9 @@
   if (isset($_POST['submit'])) {
     $countryName = $_POST['search'];
 
-    $sql = 'SELECT * FROM countries WHERE country_name = :country_name';
+    $sql = 'SELECT * FROM SW WHERE name = :name';
     $stmt = $conn->prepare($sql);
-    $stmt->execute(['country_name' => $countryName]);
+    $stmt->execute(['name' => $countryName]);
     $row = $stmt->fetch();
   } else {
     header('location: .');
@@ -37,17 +37,16 @@
   </div>
 
 </header>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mt-5">
       <div class="col-5 mx-auto">
         <div class="card shadow text-center">
           <div class="card-header">
-            <h1><?= $row['country_name'] ?></h1>
+            <h1><?= $row['name'] ?></h1>
           </div>
           <div class="card-body">
-            <!-- <h4><b>Code :</b> <?= $row['country_code'] ?></h4> -->
-            <h4><b>Statut :</b> <?= $row['city'] ?></h4>
-            <h4><b>Description :</b> <?= $row['description'] ?></h4>
+            <h4><b>Statut :</b> <?= $row['state'] ?></h4>
+            <h4><b>Description :</b><br/> <?= $row['description'] ?></h4>
           </div>
         </div>
       </div>
