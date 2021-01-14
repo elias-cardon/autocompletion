@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $("#search").keyup(function () {
         let searchText = $(this).val();
-        if (searchText != "") {
+        if (searchText !== "") {
             $.ajax({
                 url: "action.php",
                 method: "post",
