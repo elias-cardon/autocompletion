@@ -2,11 +2,11 @@
 require_once 'config.php';
 
 if (isset($_POST['submit'])) {
-    $countryName = $_POST['search'];
+    $SwName = $_POST['search'];
 
     $sql = 'SELECT * FROM SW WHERE name = :name';
     $stmt = $conn->prepare($sql);
-    $stmt->execute(['name' => $countryName]);
+    $stmt->execute(['name' => $SwName]);
     $row = $stmt->fetch();
 } else {
     header('location: .');
