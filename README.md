@@ -11,7 +11,7 @@
 👤 **Elias Cardon**
 
 * Github: [@elias-cardon](https://github.com/elias-cardon)
-* LinkedIn: [@Elias Cardon](https://linkedin.com/in/Elias Cardon)
+* LinkedIn: [@Elias Cardon](https://www.linkedin.com/in/elias-cardon-693a31a2/)
 
 ## Show your support
 
